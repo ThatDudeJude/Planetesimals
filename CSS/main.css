@@ -3,7 +3,9 @@
   src: url(../FONTS/Quicksand_Book-webfont.woff) format("woff"), url(../fonts/Quicksand_Book-webfont.svg) format("svg"), url(../fonts/Quicksand_Book-webfont.ttf) format("truetypes"), url(../fonts/Quicksand_Book-webfont.eot) format("embedded-opentype");
 }
 body {
+  position: relative;
   background: url(../IMAGES/Background10.png) repeat center center;
+  height: max-content;
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
@@ -14,6 +16,16 @@ body {
   box-sizing: border-box;
   color: whitesmoke;
   font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+* a {
+  color: whitesmoke;
+}
+* a:hover {
+  color: #efe143;
+  text-decoration: none;
+}
+* a:active {
+  color: #758000;
 }
 
 body #nav-bar {
@@ -118,6 +130,9 @@ body #nav-bar .nav-content .nav-list ul li a {
   padding: 0;
   letter-spacing: 0.1rem;
 }
+body #nav-bar .nav-content .nav-list ul li a:hover {
+  color: whitesmoke;
+}
 body #nav-bar .nav-content .nav-list ul a::after, body #nav-bar .nav-content .nav-list ul li::after {
   content: "";
   display: block;
@@ -138,6 +153,7 @@ body #nav-bar .nav-content .nav-list.more ul {
 
 .container-wrapper {
   z-index: 0;
+  min-height: calc(90vh - 90px);
 }
 .container-wrapper .main_top {
   padding-top: 115px;
@@ -241,6 +257,8 @@ p a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  width: 100%;
   flex-direction: column;
   height: 70px;
   text-align: center;

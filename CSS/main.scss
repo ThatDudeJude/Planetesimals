@@ -5,10 +5,11 @@
 
 
 body {
+    position: relative;
     // background-color: black;
     // background-color:rgba($color: #032e30, $alpha: 0.9);
     background:  url(../IMAGES/Background10.png) repeat center center;
-    
+    height: max-content;
     // background-color:rgba(8, 64, 21, 0.833)
     // background: linear-gradient(#000000b3,rgba(0, 0, 0, 0.4)), url(../IMAGES/Comet_Ast_Carousel_Background.png) no-repeat center center;
     // background:  url(../IMAGES/Asteroid_comet_background.png) no-repeat center center;
@@ -19,16 +20,27 @@ body {
     scroll-behavior: smooth;
 }
 
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: whitesmoke;
+    color: whitesmoke;    
     font-family: Quicksand, Arial, Helvetica, sans-serif;    
+    a {
+        color: whitesmoke;    
+    }    
+    a:hover {
+        color: #efe143;
+        text-decoration: none;
+    }
+    a:active {
+        color: rgb(117, 128, 0);
+    }
 }
 
 
-body{
+body{        
     #nav-bar {
         position: fixed;
         top: 0; left: 0;
@@ -126,6 +138,9 @@ body{
                             padding: 0;
                             letter-spacing: .1rem;
                         }
+                        a:hover {
+                            color: whitesmoke;
+                        }
                     }
 
                     a::after, li::after {
@@ -156,6 +171,7 @@ body{
 .container-wrapper {
     z-index: 0;
     // margin-top: 115px;    
+    min-height: calc(90vh - 90px);
     .main_top {
         padding-top: 115px;    
         // width: 100%;
@@ -291,7 +307,9 @@ p {
 }
 
 #foot {
-    display: flex; justify-content: center; align-items: center;
+    display: flex; justify-content: center; align-items: center;            
+    margin-top: 20px;
+    width: 100%;    
     flex-direction: column;
     height:  70px;
     text-align: center; align-items: center;
