@@ -42,10 +42,10 @@ div.container-wrapper .section-map div.article-container article p img {
     text-align: left;
   }
 }
-#asteroid-articles .section-map header h2 {
+#site-articles .section-map header h2 {
   background-color: rgba(54, 5, 25, 0.9);
 }
-#asteroid-articles .section-map div article {
+#site-articles .section-map div article {
   background-color: rgba(74, 1, 1, 0.9);
 }
 
