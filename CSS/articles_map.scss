@@ -1,0 +1,93 @@
+div.container-wrapper {
+    margin: 150px auto 0px auto;      
+    .section-map {                
+        .map_header {
+            // position: fixed;
+            // z-index: 10;
+            // top: 110px;
+            font-size: 1.2rem;
+            // margin: 0px 0px 15px 0px;
+            font-weight: 800;
+            padding-top: 15px;
+            padding-left: 3vw;
+            padding-bottom: 15px;
+            background-color: rgba($color: #200536, $alpha: 1.0);            
+            text-transform: uppercase;            
+                // border-bottom: dashed 1.5px whitesmoke;
+            border: dashed 1.5px whitesmoke;
+            border-radius: 5px;
+            box-shadow: 2px 3px 3px black, -2px -1px 3px black;
+            text-shadow: 4px 4px 3px black;               
+        }
+        div.article-container  {            
+            
+            article{
+                background-color: rgba($color: #2e074e, $alpha: 0.85);
+                padding: 20px;                
+                border-radius: 5px;
+                text-shadow: 4px 4px 3px black;               
+                h5 {                                                
+                    text-align: left;
+                    // text-shadow: 4px 4px 3px black;               
+                    color: whitesmoke;
+                    a {
+                        font-weight: bold;
+                    }                    
+                }
+                p {                    
+                    padding: 7px;
+                    height: max-content;
+                    
+                    img {
+                        float: left;
+                        width: 40%;
+                        margin: 0 20px 0 0;
+                    }
+                }
+            }    
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 576px) and (orientation: portrait){
+    div.container-wrapper {     
+        .section-map {                            
+            div.article-container  {            
+                
+                article{
+                    h5 {                        
+                        text-align: left;                        
+                    }                    
+                    // p {                                            
+                    //     img {                        
+                    //         width: 80%;
+                    //         margin: 20px;
+                    //     }
+                    // }
+                }    
+            }
+        }
+    }
+}
+
+#asteroid-articles {
+    .section-map {
+        header {
+            h2 {
+                // background-image: linear-gradient(to top,#020926, #032e30, #075b24);                
+                background-color: rgba($color: #360519, $alpha: 0.9);                
+            }
+        }
+        div {
+            article {
+                // background-image: linear-gradient(to top ,#020926, #032e30, #075b24);                
+                // background-color: #360519;         
+                background-color: rgba($color: #4a0101, $alpha: 0.9);                
+            }    
+        }
+
+
+    }
+}

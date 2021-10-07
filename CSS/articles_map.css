@@ -1,0 +1,52 @@
+div.container-wrapper {
+  margin: 150px auto 0px auto;
+}
+div.container-wrapper .section-map .map_header {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-top: 15px;
+  padding-left: 3vw;
+  padding-bottom: 15px;
+  background-color: #200536;
+  text-transform: uppercase;
+  border: dashed 1.5px whitesmoke;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px black, -2px -1px 3px black;
+  text-shadow: 4px 4px 3px black;
+}
+div.container-wrapper .section-map div.article-container article {
+  background-color: rgba(46, 7, 78, 0.85);
+  padding: 20px;
+  border-radius: 5px;
+  text-shadow: 4px 4px 3px black;
+}
+div.container-wrapper .section-map div.article-container article h5 {
+  text-align: left;
+  color: whitesmoke;
+}
+div.container-wrapper .section-map div.article-container article h5 a {
+  font-weight: bold;
+}
+div.container-wrapper .section-map div.article-container article p {
+  padding: 7px;
+  height: max-content;
+}
+div.container-wrapper .section-map div.article-container article p img {
+  float: left;
+  width: 40%;
+  margin: 0 20px 0 0;
+}
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  div.container-wrapper .section-map div.article-container article h5 {
+    text-align: left;
+  }
+}
+#asteroid-articles .section-map header h2 {
+  background-color: rgba(54, 5, 25, 0.9);
+}
+#asteroid-articles .section-map div article {
+  background-color: rgba(74, 1, 1, 0.9);
+}
+
+/*# sourceMappingURL=articles_map.css.map */

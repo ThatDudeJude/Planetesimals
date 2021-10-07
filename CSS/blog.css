@@ -18,6 +18,7 @@
 }
 .container-wrapper .section-container article header h2 {
   letter-spacing: 0.1vw;
+  margin-bottom: 30px;
   text-shadow: 2px 2px 1px black;
   text-align: center;
   line-height: 2em;
