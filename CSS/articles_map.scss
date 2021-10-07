@@ -1,10 +1,7 @@
 div.container-wrapper {
     margin: 150px auto 0px auto;      
     .section-map {                
-        .map_header {
-            // position: fixed;
-            // z-index: 10;
-            // top: 110px;
+        .map_header {            
             font-size: 1.2rem;
             // margin: 0px 0px 15px 0px;
             font-weight: 800;
@@ -59,13 +56,7 @@ div.container-wrapper {
                 article{
                     h5 {                        
                         text-align: left;                        
-                    }                    
-                    // p {                                            
-                    //     img {                        
-                    //         width: 80%;
-                    //         margin: 20px;
-                    //     }
-                    // }
+                    }                                        
                 }    
             }
         }
@@ -75,15 +66,12 @@ div.container-wrapper {
 #site-articles {
     .section-map {
         header {
-            h2 {
-                // background-image: linear-gradient(to top,#020926, #032e30, #075b24);                
+            h2 {                
                 background-color: rgba($color: #360519, $alpha: 0.9);                
             }
         }
         div {
-            article {
-                // background-image: linear-gradient(to top ,#020926, #032e30, #075b24);                
-                // background-color: #360519;         
+            article {                
                 background-color: rgba($color: #4a0101, $alpha: 0.9);                
             }    
         }
