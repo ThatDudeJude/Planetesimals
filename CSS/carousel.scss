@@ -42,36 +42,6 @@
     }   
 }
 
-// @-moz-keyframes auto-scroller {
-//     75% {
-//     left: 0;
-//     }
-//     95% {
-//         left: 100%;
-//     }
-//     98% {
-//         left: 100%;
-//     }
-//     99% {
-//         left: 0;
-//     }   
-// }
-
-// @-o-keyframes auto-scroller {
-//     75% {
-//     left: 0;
-// }
-// 95% {
-//     left: 100%;
-// }
-// 98% {
-//     left: 100%;
-// }
-// 99% {
-//     left: 0;
-// }   
-// }
-
 @keyframes to-first {
 75% {
     left: 0;
@@ -102,36 +72,6 @@
 }
 }
 
-// @-moz-keyframes to-first {
-// 75% {
-//     left: 0;
-// }
-// 95% {
-//     left: -300%;
-// }
-// 98% {
-//     left: -300%;
-// }
-// 99% {
-//     left: 0;
-// }
-// }
-
-// @-o-keyframes to-first {
-// 75% {
-//     left: 0;
-// }
-// 95% {
-//     left: -300%;
-// }
-// 98% {
-//     left: -300%;
-// }
-// 99% {
-//     left: 0;
-// }
-// }
-
 @keyframes snaps {
 96% {
     scroll-snap-align: center;    
@@ -148,37 +88,6 @@
 }        
 
 @-webkit-keyframes snaps {
-96% {
-    scroll-snap-align: center;
-}
-98% {
-    scroll-snap-align: none;
-}
-99% {
-    scroll-snap-align: none;
-}
-100% {
-    scroll-snap-align: center;
-}
-}        
-
-// @-moz-keyframes snaps {
-// 96% {
-    
-//     scroll-snap-align: center;
-// }
-// 98% {
-//     scroll-snap-align: none;
-// }
-// 99% {
-//     scroll-snap-align: none;
-// }
-// 100% {
-//     scroll-snap-align: center;
-// }
-// }        
-
-@-o-keyframes snaps {
 96% {
     scroll-snap-align: center;
 }
@@ -215,26 +124,17 @@
     scrollbar-color: transparent transparent;
 
 }
-    
-// *::-webkit-scrollbar {display: none;}
-    
+        
 * {
     -ms-overflow-style: none;
 }
 .carousel-wrapper {
     position: relative;
     width: 80vw;
-    height: 450px;  
-    // padding: 15px;
+    height: 450px;      
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 2px 3px 10px black, -2px -1px 10px black;
-    // border-width: 15px 15px 15px 15px;    
-    // border-color: rgba(3, 7, 71, 0.9);
-    // border-color: rgba(3, 54, 71, 0.9);
-    // border-color:rgba(5, 8, 41, 0.9);
-    // border-style: solid;
-    // background-color: rgba(3, 54, 71, 0.7);
     margin: 7vh auto 0 auto;      
     .slides {
         position: relative;
@@ -253,8 +153,7 @@
             background: no-repeat center right;
             background-size: cover;
 
-            section {                
-                // left: -100px;
+            section {                        
                 width: 40%;                
                 padding: 3.5vw;
                 margin: 15px 0vw 15px 8%;
@@ -263,8 +162,7 @@
                 border-radius: 10px;
                 background-color: rgba(2, 4, 25, 0.9);
                 height: fit-content;
-                // background-color: rgb(116, 117, 116, 0.4);
-                // height: 80%;
+
                 h3 {
                     font-size: 1.5rem;
                 }
@@ -272,7 +170,7 @@
                     font-size: 1.0rem;
                 }
             }
-
+            
             .snap{
                 position: absolute;
                 top: 0;
@@ -290,18 +188,14 @@
     .slides {
         [class$=_slide] {
         section {
-        
-                // left: -100px;
-                width: 40%;                
-                // padding: 0.3vh;
+                        
+                width: 40%;                                
                 margin: 15px 0vw 15px 8%;
                 letter-spacing: 1px;
                 font-weight: 300;
                 border-radius: 10px;
                 background-color: rgba(2, 4, 25, 0.9);
-                height: fit-content;
-                // background-color: rgb(116, 117, 116, 0.4);
-                // height: 80%;
+                height: fit-content;                
                 h3 {
                     font-size: 1.5rem;
                 }
@@ -321,6 +215,13 @@
        }
     }
 }
+}
+
+.prev_next {
+    position: absolute;
+    top: 42.5%;
+    height: 55px;
+    width: 100%;        
 }
 
 .carousel-wrapper .slides::-webkit-scrollbar {display: none;}
@@ -351,15 +252,11 @@
 @media (hover:hover) {
     .slides [class$=_slide] .snap {
         animation: auto-scroller 5s infinite, snaps 5s infinite;
-        -webkit-animation: auto-scroller 5s infinite, snaps 5s infinite;
-        // -moz-animation: auto-scroller 5s infinite, snaps 5s infinite;
-        // -o-animation: auto-scroller 5s infinite, snaps 5s infinite;        
+        -webkit-animation: auto-scroller 5s infinite, snaps 5s infinite;           
     }
     .slides .third_slide .snap{
-        animation-name: to-first, snaps;    
-        // -moz-animation-name: to-first, snaps;    
-        -webkit-animation-name: to-first, snaps;    
-        // -o-animation-name: to-first, snaps;    
+        animation-name: to-first, snaps;            
+        -webkit-animation-name: to-first, snaps;            
     }
 }
 
@@ -368,11 +265,8 @@
 .carousel-wrapper:hover .prev_next .prev a,
 .carousel-wrapper:hover .prev_next .next a {            
     animation-name: none;
-    animation-timing-function: ease-in;
-    // animation-duration: 0s;    
-    // animation-play-state: paused;
-    animation-delay: 5s;
-    // animation-name: stop-on-hover;
+    animation-timing-function: ease-in;    
+    animation-delay: 5s;    
     -moz-animation-name: none;
     -webkit-animation-name: none;
     -o-animation-name: none;
@@ -380,15 +274,13 @@
 
 .carousel-wrapper::before {
     @extend %prev_next_button;
-    background-image: url(../IMAGES/main_page/prev_sprite.png);
-    // left: 15px;
+    background-image: url(../IMAGES/main_page/prev_sprite.png);    
     left: 3px;
 }
 
 .carousel-wrapper::after {
     @extend %prev_next_button;
     background: url(../IMAGES/main_page/next_sprite.png) 0px 55px;
-    // right: 15px;
     right: 3px;
 }
 
@@ -409,18 +301,13 @@
                 height: max-content;
             }            
         }
-        [class$=_slide] section {
-            /* position: relative; */
-            /* z-index: 50; */
-            /* float: left; */
-            // order: 2;
+        [class$=_slide] section {            
             width: 100%;            
             padding: 3vw 2vw 2vw 2vw ;
             margin: 53.8vw 0px 3vh 0px;    
             border-radius: 0;
             height: fit-content;
-            background-color: rgba(2, 4, 25, 0.0);
-            /* background-color: rgba(0, 0, 0, 1.0); */
+            background-color: rgba(2, 4, 25, 0.0);            
             header {
                 h3{
                     font-size:1.5em;
@@ -446,8 +333,7 @@
                 }
             }
         }
-        .first_slide {
-            // background-image: url(../IMAGES/main_page/universe-4226463_1920.jpg);      
+        .first_slide {            
             background-image: url(../IMAGES/main_page/Asteroid_Home_Hued.jpg);        
         }
         .second_slide {
@@ -458,14 +344,6 @@
             background-position: center top;
         }
     }
-}
-
-
-.prev_next {
-    position: absolute;
-    top: 42.5%;
-    height: 55px;
-    width: 100%;    
 }
 
 @media only screen and (min-width: 768px){
@@ -501,15 +379,13 @@
     
     }
     .prev_next .prev button {
-    border-width: 0px 0px 3px 3px;    
-    // transform: rotate(45deg);
+    border-width: 0px 0px 3px 3px;        
     }
     .prev_next .next {
     right: 3px;
     }
     .prev_next .next button {
-    border-width: 0px 3px 3px 0px;
-    // transform: rotate(-45deg);
+    border-width: 0px 3px 3px 0px;    
     border-bottom-right-radius: 5px;
     }
     .prev_next .prev:hover {background: url(../IMAGES/main_page/prev_sprite.png) 0px 55px;}
@@ -544,6 +420,13 @@
             button:hover {
                 cursor: pointer;
             }    
+            button:focus {
+                outline: none;
+                background-color: red;                
+            }
+            button:active {
+                background-color: red;
+            }
             }
         .prev{
             left: 0;

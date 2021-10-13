@@ -91,20 +91,6 @@
     scroll-snap-align: center;
   }
 }
-@-o-keyframes snaps {
-  96% {
-    scroll-snap-align: center;
-  }
-  98% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
 .carousel-wrapper::after, .carousel-wrapper::before {
   content: "";
   display: block;
@@ -209,6 +195,13 @@
     height: 100%;
   }
 }
+.prev_next {
+  position: absolute;
+  top: 42.5%;
+  height: 55px;
+  width: 100%;
+}
+
 .carousel-wrapper .slides::-webkit-scrollbar {
   display: none;
 }
@@ -289,16 +282,12 @@
     height: max-content;
   }
   .carousel-wrapper .slides [class$=_slide] section {
-    /* position: relative; */
-    /* z-index: 50; */
-    /* float: left; */
     width: 100%;
     padding: 3vw 2vw 2vw 2vw;
     margin: 53.8vw 0px 3vh 0px;
     border-radius: 0;
     height: fit-content;
     background-color: rgba(2, 4, 25, 0);
-    /* background-color: rgba(0, 0, 0, 1.0); */
   }
   .carousel-wrapper .slides [class$=_slide] section header h3 {
     font-size: 1.5em;
@@ -323,13 +312,6 @@
 .carousel-wrapper .slides .third_slide {
   background-image: url(../IMAGES/main_page/NEO_Compressed2.jpg);
   background-position: center top;
-}
-
-.prev_next {
-  position: absolute;
-  top: 42.5%;
-  height: 55px;
-  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -418,6 +400,13 @@
   }
   .prev_next > * button:hover {
     cursor: pointer;
+  }
+  .prev_next > * button:focus {
+    outline: none;
+    background-color: red;
+  }
+  .prev_next > * button:active {
+    background-color: red;
   }
   .prev_next .prev {
     left: 0;

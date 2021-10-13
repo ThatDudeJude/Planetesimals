@@ -1,14 +1,8 @@
 const carouselHist = document.querySelectorAll('.container-wrapper .carousel-wrapper a');
 
 for (let anchor of carouselHist) {    
-    anchor.addEventListener('click', () => {
-        // window.location.replace("./index.html")
-        setTimeout(() => {
-        // history.length = 2
-        // history.replaceState(null, '', "./index.html");
-        
-        // history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search)
-        // window.forward(2)
+    anchor.addEventListener('click', () => {s        
+        setTimeout(() => {        
         history.replaceState(null, '', './index.html');
         
     }, 1)
@@ -90,30 +84,3 @@ stopScroll.forEach(element => {
 })
 
 console.log(stopScroll)
-
-// prev_next.addEventListener('click', () => {
-//     // window.location.replace("./index.html")
-//     setTimeout(() => 
-//     history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search), 5);
-// }, 5)
-
-// var animation = false, 
-//     animationstring = 'animation',
-//     keyframeprefix = '', 
-//     domPrefixes = 'Webkit Moz O ms Khtml'.split(' '), 
-//     pfx = '', 
-//     elem = document.createElement('div');
-
-// if (elem.style.animationName !== undefined) {animation = true;}
-
-// if (animation === false) {
-//   for (var i = 0; i < domPrefixes.length; i++) {
-//     if (elem.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
-//       pfx = domPrefixes[i];
-//       animationstring = pfx + 'Animation';
-//       keyframeprefix = '-' + pfx.toLowerCase() + '-';
-//       animation = true;
-//       break;
-//     }
-//   }
-// }

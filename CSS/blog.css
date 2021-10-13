@@ -4,6 +4,7 @@
 .container-wrapper .section-container {
   border-radius: 1.5vh;
   padding: 4vh 0.5vw;
+  background-image: linear-gradient(to bottom right, #020926, #032e30, #075b24);
 }
 .container-wrapper .section-container article {
   font-size: 1.9em;
@@ -26,11 +27,17 @@
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
 }
-.container-wrapper .section-container article p, .container-wrapper .section-container article ul li {
+.container-wrapper .section-container article ul li {
+  margin-bottom: 5vh;
+}
+.container-wrapper .section-container article p, .container-wrapper .section-container article div ul li {
   font-size: 1.2em;
-  margin-bottom: 4.5vh;
+  margin: 3.5vh 0;
   text-shadow: 2px 2px 1px black;
   line-height: 1.5em;
+}
+.container-wrapper .section-container article div ul li p {
+  font-size: 1em;
 }
 .container-wrapper .section-container article blockquote {
   background-image: linear-gradient(to bottom right, #020926, #032628, #053e19);
@@ -50,7 +57,7 @@
   line-height: 1.5em;
 }
 .container-wrapper .section-container article figure {
-  margin: 50px auto;
+  margin: 30px auto;
   width: fit-content;
 }
 .container-wrapper .section-container article figure img {
@@ -89,10 +96,49 @@ section.related p {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .container-wrapper .section-container article header h2 {
     font-size: 1.1em;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
   }
-  .container-wrapper .section-container article p, .container-wrapper .section-container article ul li {
+  .container-wrapper .section-container article p, .container-wrapper .section-container article ul li, .container-wrapper .section-container article div ul li {
     font-size: 0.7em;
   }
+}
+aside.container {
+  border-radius: 5px;
+}
+aside.container header {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-top: 15px;
+  padding-left: 3vw;
+  padding-bottom: 11px;
+  background-color: #200536;
+  text-transform: uppercase;
+  border: dashed 1.5px whitesmoke;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px black, -2px -1px 3px black;
+  text-shadow: 4px 4px 3px black;
+}
+aside.container header h5 {
+  margin-left: 10px;
+}
+aside.container div.row {
+  background-color: rgba(46, 7, 78, 0.95);
+  border-radius: 5px;
+}
+aside.container div.row p {
+  padding: 10px;
+  height: max-content;
+  text-align: center;
+}
+aside.container div.row p a {
+  font-weight: bold;
+  padding: 10px;
+}
+aside.container div.row p img {
+  margin: 10px 0 10px 10px;
+  width: 90%;
 }
 
 /*# sourceMappingURL=blog.css.map */

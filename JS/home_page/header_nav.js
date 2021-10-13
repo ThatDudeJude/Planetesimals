@@ -7,16 +7,11 @@ burger_nav.addEventListener('click', () => {
 });
 
 const prev_next = document.querySelectorAll('.container-wrapper .carousel-wrapper .prev_next a');
-// console.log(prev_next);
+
 for (let anchor of prev_next) {
     anchor.addEventListener('click', () => {
-        // window.location.replace("./index.html")
         setTimeout(() => 
         history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search));
     }, 5)
 }
-// prev_next.addEventListener('click', () => {
-//     // window.location.replace("./index.html")
-//     setTimeout(() => 
-//     history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search), 5);
-// }, 5)
+
