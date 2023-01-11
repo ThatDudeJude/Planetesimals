@@ -189,7 +189,7 @@
         [class$=_slide] {
         section {
                         
-                width: 40%;                                
+                width: 45%;                                
                 margin: 15px 0vw 15px 8%;
                 letter-spacing: 1px;
                 font-weight: 300;
@@ -404,7 +404,7 @@
         z-index: 50;
         > * {
             position: absolute;
-            width: 40px;
+            width: 20%;
             height: 100%;
             background-color: transparent;
 
@@ -419,6 +419,7 @@
                 }
             button:hover {
                 cursor: pointer;
+                background-color: transparent;
             }    
             button:focus {
                 outline: none;
@@ -448,7 +449,7 @@
         .next button:hover, 
         .prev button:focus,  
         .next button:focus {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.0);
         }     
     }
     .carousel-wrapper::before, .carousel-wrapper::after { 

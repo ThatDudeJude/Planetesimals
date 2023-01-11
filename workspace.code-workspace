@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Mo_HTML_CSS_PRAC"
+		},
+		{
+			"path": "..\\..\\..\\Content_Draft\\WireFrame and Template\\Main Page"
+		},
+		{
+			"path": "..\\..\\..\\WEB_DEV_WITH_PYTHON_AND_JAVASCRIPT"
+		},
+		{
+			"path": "..\\..\\..\\HTML_CSS_Practice\\html-and-css-book-code-0915\\html-and-css-book-code-0915\\My_Pracs\\Mo_prac"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\HTML_CSS_Practice\\html-and-css-book-code-0915\\html-and-css-book-code-0915\\My_Pracs\\LAYOUT_CSS_FRAMEWORKS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Planetismals"
+	}
+}

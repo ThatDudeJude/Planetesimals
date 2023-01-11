@@ -28,13 +28,13 @@
             ul li {
                 margin-bottom: 5vh;
             }
-            p, div ul li {
+            p, div ul li, div ol li {
                 font-size: 1.2em;                
                 margin: 3.5vh 0;                                
                 text-shadow: 2px 2px 1px black;
                 line-height: 1.5em;                              
             }
-            div ul li p {
+            div ul li p, div ol li p {
                 font-size: 1.0em;                
             }
             blockquote {
@@ -111,7 +111,7 @@ section.related {
                         margin-bottom: 0;
                     }                    
                 }
-                p, ul li, div ul li {
+                p, ul li, div ul li, div ol li {
                     font-size: 0.7em;
                 }
             }

@@ -30,13 +30,13 @@
 .container-wrapper .section-container article ul li {
   margin-bottom: 5vh;
 }
-.container-wrapper .section-container article p, .container-wrapper .section-container article div ul li {
+.container-wrapper .section-container article p, .container-wrapper .section-container article div ul li, .container-wrapper .section-container article div ol li {
   font-size: 1.2em;
   margin: 3.5vh 0;
   text-shadow: 2px 2px 1px black;
   line-height: 1.5em;
 }
-.container-wrapper .section-container article div ul li p {
+.container-wrapper .section-container article div ul li p, .container-wrapper .section-container article div ol li p {
   font-size: 1em;
 }
 .container-wrapper .section-container article blockquote {
@@ -100,7 +100,7 @@ section.related p {
     letter-spacing: 0.03em;
     margin-bottom: 0;
   }
-  .container-wrapper .section-container article p, .container-wrapper .section-container article ul li, .container-wrapper .section-container article div ul li {
+  .container-wrapper .section-container article p, .container-wrapper .section-container article ul li, .container-wrapper .section-container article div ul li, .container-wrapper .section-container article div ol li {
     font-size: 0.7em;
   }
 }
