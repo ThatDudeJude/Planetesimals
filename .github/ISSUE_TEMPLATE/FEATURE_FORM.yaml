@@ -1,6 +1,6 @@
 name: Feature Suggestion
 description: Suggest a feature
-titles: 'Feature Suggestion:'
+title: 'Feature Suggestion:'
 labels: ['enhancement']
 assignees:
   - ThatDudeJude

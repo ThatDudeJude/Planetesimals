@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a bug report
-titles: "[Bug:]"
-labels: ["bug", "triage"]
+title: '[Bug:]'
+labels: ['bug', 'triage']
 assignees:
   - ThatDudeJude
 
@@ -29,8 +29,8 @@ body:
         2. With this config...
         3. Run '...'
         4. See error '...'
-      validations:
-        required: false
+    validations:
+      required: false
   - type: dropdown
     id: browsers
     attributes:
@@ -67,4 +67,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "Thanks for completing our bug report form!"
+      value: 'Thanks for completing our bug report form!'
